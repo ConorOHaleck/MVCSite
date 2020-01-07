@@ -1,0 +1,30 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_MyDefaultLayout</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h1> What is a website, </h1>
+    <h2> but a miserable little pile of content</h2>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Page 1</a> <br />
+        <a asp-controller="Home" asp-action="About">Page 2</a>
+    </nav>
+
+    <footer>
+        <p>&copy;@DateTime.Today.Year Conor's Website</p>
+    </footer>
+</body>
+</html>
